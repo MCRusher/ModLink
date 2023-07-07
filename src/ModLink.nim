@@ -3,7 +3,7 @@ import os, strformat
 let args = commandLineParams()
 
 if args.len != 3:
-    quit(&"Usage: ./{getAppFilename()} [-r|-a] <mod groups src dir> <mod dest dir>\nOptions:\n -a : add mode\n -r : remove mode")
+    quit(&"Usage: ModLink [-r|-a] <mod groups src dir> <mod dest dir>\nOptions:\n -a : add mode\n -r : remove mode")
 
 let remove = args[0] == "-r"
 let src = args[1]
